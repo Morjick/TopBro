@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background: $main;
+  background: linear-gradient(  rgba(110,16,94,1) 0%, rgba(0,0,0,.7) 100%);
+}
+
+.footer_inner {
+  display: flex;
+}
+
+.logo_footer {
+  width: 200px;
+  height: 200px;
+}
+
+.footer_desk {
+  margin-top: 100px;
+}
+
+.footer_hrefs {
+  width: 1000px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_social {
+  margin-top: 20px;
+  text-align: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}

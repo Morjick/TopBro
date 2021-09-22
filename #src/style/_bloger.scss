@@ -1,0 +1,187 @@
+.bloger_desk_item {
+  background: rgba(#fff, .25);
+  width: 100%;
+  height: 570px;
+  border: 1px solid $light;
+  overflow: hidden;
+}
+
+.bloger_deck_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloger_avatar {
+  display: flex;
+  width: 400px;
+  height: 570px;
+  overflow: hidden;
+  justify-content: center;
+
+  img {
+    display: block;
+    height: 100%;
+  }
+}
+
+.bloger_info_name {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.bloger_info {
+  position: relative;
+  max-width: 900px;
+  padding: 40px 30px;
+  overflow: hidden;
+}
+
+.bloger_platform {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &::after, &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%; 
+    background: $light;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.platform_to_blog {
+  display: flex;
+  position: relative;
+  width: 50%;
+  margin: 20px 0;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.subscribees_number {
+
+  p {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.bloger_more_info {
+  margin: 30px 0;
+
+  p {
+    display: block;
+    width: 100%;
+    height:  130px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: #969696;
+      overflow: visible;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 4px;
+      background: $light;
+      border-radius: 8px;
+    }
+  }
+}
+
+.last_videos {
+  margin-top: 50px;
+}
+
+.last_videos_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bloger_las_video {
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &::before {
+    content: url('/img/sprytes/play.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+  }
+
+  &:hover {
+    .bloger_last_video_inner::after {
+      opacity: 0;
+    }
+  }
+}
+
+.bloger_last_video_inner {
+  position: relative;
+  display: block;
+  z-index: 2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    background: $sup;
+    opacity: .3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+  }
+}
+
+.other_blogers {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1000%;
+  margin-top: 50px;
+  overflow-x: scroll;
+
+  .bloger_item {
+    width: 311px;
+    margin-right: 20px;
+  }
+
+  &::-webkit-scrollbar {
+    height: 4px;
+    background: #969696;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $contrast;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 420px;
+}
+
+// .swiper-button-prev,
+// .swiper-button-next {
+//   margin-top: 400px;
+// }
+
+.swiper-scrollbar {
+  width: 350px;
+}

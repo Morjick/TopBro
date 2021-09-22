@@ -1,0 +1,38 @@
+.header {
+  display: block;
+  width: 100%;
+  height: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $main;
+  background: linear-gradient( rgba(0,0,0,.7) 0%, rgba(110,16,94,1) 100%);
+}
+
+.header_inenr {
+  display: flex;
+  width: 1300px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo_header {
+  width: 98px;
+  height: 98px;
+  padding: 10px 0;  
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 40px 0;
+}
+
+.header_menu_item {
+  margin: 0 30px;
+}
+
+.lang_header {
+  display: flex;
+  margin: 40px 0;
+}
